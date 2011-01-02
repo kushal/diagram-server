@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project diagram-server">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Users/kushal/Desktop/diagram.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.kushaldave.diagram.DiagramServer"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/kushal/Documents/appengine/diagram-server/target/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Applications/eclipse/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Applications/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/eclipse/jetty/jetty-server/7.2.2.v20101205/jetty-server-7.2.2.v20101205.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/eclipse/jetty/jetty-continuation/7.2.2.v20101205/jetty-continuation-7.2.2.v20101205.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/eclipse/jetty/jetty-http/7.2.2.v20101205/jetty-http-7.2.2.v20101205.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/eclipse/jetty/jetty-io/7.2.2.v20101205/jetty-io-7.2.2.v20101205.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/eclipse/jetty/jetty-util/7.2.2.v20101205/jetty-util-7.2.2.v20101205.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/eclipse/jetty/jetty-servlet/7.2.2.v20101205/jetty-servlet-7.2.2.v20101205.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/eclipse/jetty/jetty-security/7.2.2.v20101205/jetty-security-7.2.2.v20101205.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/org/json/json/20090211/json-20090211.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/com/google/guava/guava-collections/r03/guava-collections-r03.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/com/google/guava/guava-annotations/r03/guava-annotations-r03.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/com/google/guava/guava-primitives/r03/guava-primitives-r03.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/kushal/.m2/repository/com/google/guava/guava-base/r03/guava-base-r03.jar"/>
+        </jar>
+    </target>
+</project>
